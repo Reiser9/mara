@@ -1,5 +1,7 @@
+/* eslint-disable */
 import React, { useEffect, useContext, useState } from 'react';
 import { useHistory } from 'react-router';
+import { Link } from 'react-router-dom';
 import { ReactSVG } from 'react-svg';
 import { appStore } from '../../state/app';
 import ShareSocialLinks from '../../components/ShareSocialLinks';
@@ -103,6 +105,9 @@ const LinkDrop = () => {
                 ))}
               </ul>
               <div className="link-drop__save">
+                <p>Form for a Gift Card</p>
+                <Link to="/card_NTA.docx" target="_blank" download className="download__link">Download</Link>
+
                 <SaveBtn linkDropArray={linkDropArray} />
               </div>
 
@@ -115,10 +120,10 @@ const LinkDrop = () => {
               />
             </div>
             <picture>
-              <source srcSet="./images/misfits-big-2x.webp 2x, ./images/misfits-big.webp 1x" />
+              <source srcSet="./images/generate-background.jpg" />
               <img
                 className="link-drop__img"
-                src="/images/misfits-big.png"
+                src="/images/generate-background.jpg"
                 alt="big misfits"
               />
             </picture>

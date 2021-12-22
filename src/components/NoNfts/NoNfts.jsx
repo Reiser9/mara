@@ -3,7 +3,6 @@ import { useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import Buy from '../Buy/Buy';
 import GenerateSoldOut from '../Generate/GenerateSoldOut';
-import ShareSocialLinks from '../ShareSocialLinks';
 
 const NoNfts = ({ soldOut }) => {
   const { pathname } = useLocation();
@@ -23,13 +22,12 @@ const NoNfts = ({ soldOut }) => {
             <p className="no-nfts__text">
               Buy your first <span className="no-nfts__text-purpure">NFT</span>
             </p>
-            <ShareSocialLinks className="no-nfts__links" color="purpure" />
           </div>
           <picture>
-            <source srcSet="./images/generate-background-2x.webp 2x, ./images/generate-background.webp 1x" />
+            <source srcSet="./images/generate-background.jpg" />
             <img
               className="no-nfts__img"
-              src="./images/generate-background.png"
+              src="./images/generate-background.jpg"
               alt="no nft background"
             />
           </picture>

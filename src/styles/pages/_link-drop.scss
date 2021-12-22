@@ -50,7 +50,7 @@
   &__center {
     width: fit-content;
     display: flex;
-    gap: 150px;
+    gap: 30px;
   }
 
   &__list {
@@ -102,11 +102,13 @@
 
   &__save {
     display: flex;
+    align-items: flex-start;
     margin-top: 10px;
     margin-bottom: 20px;
   }
 
   &__img {
+    max-width: 100%;
     @include for-tablet {
       display: none;
     }
@@ -120,4 +122,10 @@
       gap: 10px;
     }
   }
+}
+
+.download__link{
+  color: #000;
+  text-decoration: underline!important;
+  margin-left: .5rem;
 }

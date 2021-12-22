@@ -1,17 +1,16 @@
-// import React, { useContext } from 'react';
-import React from 'react';
+/* eslint-disable */
+import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
-// import { appStore } from '../../state/app';
-// import BuyMoreBtn from '../BuyMoreBtn';
+import { appStore } from '../../state/app';
+import BuyMoreBtn from '../BuyMoreBtn';
 import BuyMore from './BuyMore';
 import GenerateSoldOut from '../Generate/GenerateSoldOut';
 
 const Buy = ({ soldOut }) => {
   const linkDrop = true;
-  console.log(linkDrop);
-  // const { update } = useContext(appStore);
+  const { update } = useContext(appStore);
 
-  // const modalOpen = () => update('app.modalOpen', true);
+  const modalOpen = () => update('app.modalOpen', true);
 
   return (
     <div className="buy">
@@ -19,12 +18,12 @@ const Buy = ({ soldOut }) => {
         {!soldOut ? (
           <>
             <BuyMore />
-            {/* <BuyMore isLinkDrop={linkDrop} />
+            <BuyMore isLinkDrop={linkDrop} />
             <BuyMoreBtn
               text="Send an NFT"
               className="buy__nft"
               onClick={modalOpen}
-            /> */}
+            />
           </>
         ) : (
           <div className="buy__sold-out-wrapper">
