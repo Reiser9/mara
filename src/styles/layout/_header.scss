@@ -1,11 +1,12 @@
 .header {
   padding: 36px 120px;
-  max-width: 1280px;
+  width: 100%;
   margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
+  background-color: #ffb048;
 
   @include for-small-desktop {
     padding: 36px;
