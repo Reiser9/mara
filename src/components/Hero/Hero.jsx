@@ -10,13 +10,13 @@ const Hero = () => (
           <div className="hero__item">
             <p className="hero__item--title">Total amount</p>
 
-            <p className="hero__item--text">2,000</p>
+            <p className="hero__item--text">3,333</p>
           </div>
 
           <div className="hero__item">
             <p className="hero__item--title">Price</p>
 
-            <p className="hero__item--text">10 Ⓝ</p>
+            <p className="hero__item--text">5 Ⓝ</p>
           </div>
         </div>
 
