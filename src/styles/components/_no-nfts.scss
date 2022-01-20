@@ -32,6 +32,7 @@
     line-height: 115%;
     margin-bottom: 60px;
     margin-top: 68px;
+    color: #000;
 
     @include for-phone {
       margin-top: 10px;
@@ -43,9 +44,10 @@
     font-size: 24px;
     line-height: 115%;
     margin-bottom: 60px;
+    color: #000;
 
     &-purpure {
-      color: $purpure-color;
+      color: #ffb048;
     }
   }
 

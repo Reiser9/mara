@@ -16,27 +16,9 @@ const Generate = () => {
     <section className="generate" id="generate">
       <div className="generate__container">
         <div className="generate__information">
-          <h2 className="generate__title">NEAR Tiger Academy</h2>
+          <h2 className="generate__title">How much?</h2>
           <p className="generate__text">
-            NTA Sale is live! Get your hands on one of the most precious generative PFP NFTs on NEAR Protocol.
-          </p>
-          <p className="generate__text">
-          You are almost there. You have 3 steps to accomplish:
-          </p>
-          <p className="generate__text">
-          1) Connect the wallet at the top of the page;
-          </p>
-          <p className="generate__text">
-          2) Pick the # of NFTs: 1 or 10;
-          </p>
-          <p className="generate__text">
-          3) Click “Generate”.
-          </p>
-          <p className="generate__text">
-            The price for one is only 10 Ⓝ.
-          </p>
-          <p className="generate__text">
-            Quantity limited to 2 000.
+            Antisocial Ape Club are priced at a flat rate of 5 NEAR.
           </p>
         </div>
 

@@ -22,23 +22,13 @@ const Hero = () => (
 
         <p className="hero__text">18/12/2021 @ 15:00 UTC</p>
         <h1 className="hero__title">
-          NEAR Tiger <br /> Academy
+          Antisocial Ape <br /> Club
         </h1>
         <p className="hero__text--point">
-          <span>A high-class collection of 2000 algorithmically generated NFTs on NEAR Protocol.<br />The Academy resides in Los Tigres, a city full of opportunities, its citizens are eligible for the following:</span>
+          A collection of 3333 unique, randomly generated pixel art ape NFTs stored on the NEAR blockchain.
         </p>
-        <p className="hero__text--point">
-        1) &gt;100 traits for PFP</p>
-        <p className="hero__text--point">
-        2) Investment in promising student researchers</p>
-        <p className="hero__text--point">
-        3) Membership in the EnDAOment Fund</p>
-        <p className="hero__text--point">
-        4) Lotteries</p>
-        <p className="hero__text--point">
-        5) Special conditions on future projects</p>
         <p className="hero__text--select">
-        Select the amount of NEAR Tigers you&apos;d like to mint and click the «Mint».</p>
+        Select the amount of Antisocial Apes you you&apos;d like to mint and click the «Mint».</p>
         <div className="hero__wrapper">
           <CalendarBtn className="hero__calendar-btn" />
         </div>
