@@ -7,8 +7,8 @@ const Reveal = ({ handleClick, title }) => (
   <div className="reveal__item" onClick={handleClick}>
     <div className="reveal__top">
       <picture>
-        <source srcSet="./images/reveal.jpg" />
-        <img className="reveal__image" src="./images/reveal.jpg" alt="reveal" />
+        <source srcSet="./images/reveal.png" />
+        <img className="reveal__image" src="./images/reveal.png" alt="reveal" />
       </picture>
 
       <div className="reveal__question-sign">

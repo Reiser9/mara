@@ -20,7 +20,7 @@ const Hero = () => (
           </div>
         </div>
 
-        <p className="hero__text">18/12/2021 @ 15:00 UTC</p>
+        <p className="hero__text">25/01/2022</p>
         <h1 className="hero__title">
           Antisocial Ape <br /> Club
         </h1>
