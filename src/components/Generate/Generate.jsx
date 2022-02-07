@@ -18,7 +18,7 @@ const Generate = () => {
         <div className="generate__information">
           <h2 className="generate__title">How much?</h2>
           <p className="generate__text">
-            Antisocial Ape Club are priced at a flat rate of 5 NEAR.
+            Papu Superstars are priced at a flat rate of 6.9 NEAR.
           </p>
         </div>
 

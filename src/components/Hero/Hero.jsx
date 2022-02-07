@@ -10,25 +10,25 @@ const Hero = () => (
           <div className="hero__item">
             <p className="hero__item--title">Total amount</p>
 
-            <p className="hero__item--text">3,333</p>
+            <p className="hero__item--text">3,000</p>
           </div>
 
           <div className="hero__item">
             <p className="hero__item--title">Price</p>
 
-            <p className="hero__item--text">5 Ⓝ</p>
+            <p className="hero__item--text">6,9 Ⓝ</p>
           </div>
         </div>
 
-        <p className="hero__text">25/01/2022</p>
+        <p className="hero__text">10/02/2022</p>
         <h1 className="hero__title">
-          Antisocial Ape <br /> Club
+          Papu Superstars
         </h1>
         <p className="hero__text--point">
-          A collection of 3333 unique, randomly generated pixel art ape NFTs stored on the NEAR blockchain.
+          A collection of 3,000 unique Papus born to be Gaming Superstars. Photographed with glamour on the NEAR Blockchain.
         </p>
         <p className="hero__text--select">
-        Select the amount of Antisocial Apes you you&apos;d like to mint and click the «Mint».</p>
+        Select the amount of Papus you'd like to mint and click the "Mint" button.</p>
         <div className="hero__wrapper">
           <CalendarBtn className="hero__calendar-btn" />
         </div>
