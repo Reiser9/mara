@@ -18,7 +18,7 @@ const useMintNft = () => {
     } else {
       contract.nft_mint_many({
         args: { num: count },
-        gas: '230000000000000',
+        gas: '300000000000000',
         amount: price.tenTokenCost,
         callbackUrl,
       });

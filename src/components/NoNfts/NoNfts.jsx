@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
@@ -8,33 +9,35 @@ const NoNfts = ({ soldOut }) => {
   const { pathname } = useLocation();
 
   return (
-    <div className="no-nfts">
-      <div className="no-nfts__data">
-        <div className="no-nfts__data-top">
-          <div className="no-nfts__information">
-            <p className="no-nfts__title">
-              You don&#39;t have any{' '}
-              <span className="no-nfts__text-purpure">
-                {pathname === '/link-drop' ? 'LinkDrops' : 'NFTs'}
-              </span>{' '}
-              yet
-            </p>
-            <p className="no-nfts__text">
-              Buy your first <span className="no-nfts__text-purpure">NFT</span>
-            </p>
+    <>
+      <div className="no-nfts">
+        <div className="no-nfts__data">
+          <div className="no-nfts__data-top">
+            <div className="no-nfts__information">
+              <p className="no-nfts__title">
+                You don&#39;t have any{' '}
+                <span className="no-nfts__text-purpure">
+                  {pathname === '/link-drop' ? 'LinkDrops' : 'NFTs'}
+                </span>{' '}
+                yet
+              </p>
+              <p className="no-nfts__text">
+                Buy your first <span className="no-nfts__text-purpure">NFT</span>
+              </p>
+            </div>
+            <picture>
+              <source srcSet="./images/hero2.png" />
+              <img
+                className="no-nfts__img"
+                src="./images/hero2.png"
+                alt="no nft background"
+              />
+            </picture>
           </div>
-          <picture>
-            <source srcSet="./images/hero2.png" />
-            <img
-              className="no-nfts__img"
-              src="./images/hero2.png"
-              alt="no nft background"
-            />
-          </picture>
         </div>
-        {soldOut ? <GenerateSoldOut className="no-nfts__sold-out" /> : <Buy />}
       </div>
-    </div>
+      {soldOut ? <GenerateSoldOut className="no-nfts__sold-out" /> : <Buy />}
+    </>
   );
 };
 
