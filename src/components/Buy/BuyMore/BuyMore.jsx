@@ -18,7 +18,7 @@ const BuyMore = ({ isLinkDrop }) => {
   const { price, app } = state;
 
   const moreThenManyCount = app.tokensLeft >= app.manyCount;
-  const textForMessage = `Select 1 dog`;
+  const textForMessage = `Select 1 or 10 bulls`;
 
   return (
     <div className="buy-more">

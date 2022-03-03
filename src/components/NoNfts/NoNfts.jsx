@@ -26,10 +26,10 @@ const NoNfts = ({ soldOut }) => {
               </p>
             </div>
             <picture>
-              <source srcSet="./images/hero2.png" />
+              <source srcSet="./images/hero2.jpg" />
               <img
                 className="no-nfts__img"
-                src="./images/hero2.png"
+                src="./images/hero2.jpg"
                 alt="no nft background"
               />
             </picture>

@@ -1,4 +1,4 @@
-const contractName = 'cooldogsclub.near';
+const contractName = 'billionairebullsclub.near';
 
 export default function getConfig() {
   let config = {
