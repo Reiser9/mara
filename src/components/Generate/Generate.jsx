@@ -18,7 +18,7 @@ const Generate = () => {
         <div className="generate__information">
           <h2 className="generate__title">How much?</h2>
           <p className="generate__text">
-            Papu Superstars are priced at a flat rate of 6.9 NEAR.
+            Cool Dogs are priced at a flat rate of 6 NEAR.
           </p>
         </div>
 
