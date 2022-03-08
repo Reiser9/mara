@@ -8,14 +8,14 @@ import socialTwitter from '../../assets/images/social-twitter.svg';
 const SocialLinks = ({ className }) => (
   <div className={`social-links ${className || ''}`}>
     <a
-      href="https://discord.com/invite/nPbmwGZ7Qr"
+      href="https://discord.gg/GFUGDY6PPb"
       target="_blank"
       rel="noopener noreferrer"
     >
       <ReactSVG className="social-links__item" src={socialFace} />
     </a>
     <a
-      href="https://twitter.com/BullsNear"
+      href="https://twitter.com/nearbiez?s=21"
       rel="noopener noreferrer"
       target="_blank"
     >
