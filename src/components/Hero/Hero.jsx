@@ -28,7 +28,7 @@ const Hero = () => (
           A collection of 1,500 Fun A.I.s roaming on the NEAR blockchain.
         </p>
         <p className="hero__text--select">
-          Select the amount of Biezes you'd like to mint and click the "Mint" button.
+          Select the amount of Nearbiez you’d like to mint
         </p>
         <div className="hero__wrapper">
           <CalendarBtn className="hero__calendar-btn" />
