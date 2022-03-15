@@ -15,15 +15,23 @@ const Header = () => {
 
   return (
     <header className="header">
-      <SocialLinks className="header__social" />
-      {account?.accountId ? (
-        <ConnectWalletBtn
-          text={account.accountId}
-          handleClick={() => wallet.signOut()}
-        />
-      ) : (
-        <ConnectWalletBtn handleClick={() => wallet.signIn()} />
-      )}
+      <a href="https://paras.id/mara_nft.near/collections" className="header__title">
+        Marketplace
+      </a>
+
+      <img src="./images/x.svg" alt="x" />
+
+      <div className="header__wrapper">
+        <SocialLinks className="header__social" />
+        {account?.accountId ? (
+          <ConnectWalletBtn
+            text={account.accountId}
+            handleClick={() => wallet.signOut()}
+          />
+        ) : (
+          <ConnectWalletBtn handleClick={() => wallet.signIn()} />
+        )}
+      </div>
     </header>
   );
 };

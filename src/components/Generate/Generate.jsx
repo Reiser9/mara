@@ -15,13 +15,6 @@ const Generate = () => {
   return (
     <section className="generate" id="generate">
       <div className="generate__container">
-        <div className="generate__information">
-          <h2 className="generate__title">How much?</h2>
-          <p className="generate__text">
-            Nearbiez are priced at a flat rate of 5N
-          </p>
-        </div>
-
         <div className="generate__block">
           {soldOut ? <GenerateSoldOut /> : <GenerateBlock />}
 

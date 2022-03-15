@@ -1,12 +1,12 @@
 .header {
-  padding: 36px 120px;
+  max-width: 1100px;
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
   margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  background-color: #8b20fc;
+  background-color: transparent;
 
   @include for-small-desktop {
     padding: 36px;
@@ -22,6 +22,18 @@
     gap: 20px;
   }
 
+  &__title{
+    font-size: 16px;
+    color: #344054;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  &__wrapper{
+    display: flex;
+    align-items: center;
+  }
+
   &__navigation {
     flex-grow: 2;
     margin-right: 30px;
@@ -32,7 +44,7 @@
   }
 
   &__social {
-    margin-right: 56px;
+    margin-right: 20px;
 
     @include for-small-desktop {
       margin-right: 30px;

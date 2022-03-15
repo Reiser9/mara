@@ -1,4 +1,5 @@
 /* eslint-disable */
+import {createContext} from 'react';
 import getConfig from '../config';
 import * as nearAPI from 'near-api-js';
 import { getWallet, getContract, getPrice } from '../utils/near-utils';
@@ -115,6 +116,7 @@ export const initNear =
           linkDropArray,
           soldOut,
           tokensLeft,
+          nftTotalSupply
         };
 
         await update('', { app });

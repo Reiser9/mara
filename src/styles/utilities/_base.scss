@@ -9,7 +9,8 @@ html {
   font-size: 14px;
   font-family: $common-font;
   font-weight: 500;
-  background: #fdf7fa;
+  background: url("../../assets/images/main-bg.svg") center no-repeat;
+  background-size: cover;
 }
 
 li {

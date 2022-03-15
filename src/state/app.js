@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { StateUtils } from '../utils/state-utils';
 import { initNear } from './near';
 
@@ -12,6 +13,7 @@ const initialState = {
     urlIpfs: '',
     tokensLeft: undefined,
     modalOpen: false,
+    nftTotalSupply: undefined
   },
   near: {
     initialized: false,

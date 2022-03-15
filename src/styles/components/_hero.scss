@@ -1,8 +1,12 @@
 .hero {
   padding: 40px 0 40px;
-  background: #fff;
   position: relative;
-
+  &__picture{
+    width: 400px;
+    display: flex;
+    flex-shrink: 0;
+    margin-left: 40px;
+  }
   &__wrapper--content{
     display: flex;
     margin-bottom: 20px;
@@ -25,14 +29,18 @@
       border-bottom: 1px solid #000;
       display: inline-block;
       font-size: 18px;
-      color: #000;
+      color: #101828;
     }
 
     &--text{
       margin-top: 10px;
       font-size: 24px;
       font-weight: 600;
-      color: #000;
+      color: #101828;
+    }
+
+    &--icon{
+      margin-left: 5px;
     }
   }
 
@@ -65,6 +73,9 @@
   &__information {
     width: 1100px;
     margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     position: relative;
 
     @include for-laptop {
@@ -78,10 +89,13 @@
   }
 
   &__title {
-    font-size: 55px;
+    font-size: 35px;
     line-height: 115%;
     margin-bottom: 10px;
-    color: #000;
+    color: #101828;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-style: italic;
 
     @include for-phone {
       font-size: 40px;
@@ -90,16 +104,23 @@
     &_purpure {
       color: $purpure-color;
     }
+
+    &--italic{
+      font-family: 'Caveat', sans-serif;
+      font-weight: 500;
+      font-size: 40px;
+      font-style: normal;
+    }
   }
 
   &__text {
     &--point{
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 400;
       line-height: 150%;
       max-width: 600px;
       margin-bottom: 2px;
-      color: #000;
+      color: #667085;
     }
     &--select{
       font-size: 18px;
@@ -112,12 +133,12 @@
     span{
       font-weight: 600;
     }
-    font-size: 18px;
-    font-weight: 400;
+    color: #9e77ed;
+    font-size: 14px;
+    font-weight: 600;
     line-height: 150%;
     max-width: 500px;
     margin-bottom: 15px;
-    color: #000;
 
     @include for-phone {
       max-width: unset;
@@ -126,17 +147,9 @@
   }
 
   &__image {
-    width: 530px;
+    width: 100%;
     height: auto;
-    position: absolute;
-    z-index: 5;
-    right: -70px;
-    bottom: -55px;
     flex-shrink: 0;
-    padding: 60px 0 0 40px;
-    border-top: 1px solid #3c2745;
-    border-left: 1px solid #3c2745;
-    border-radius: 35px 0 0 0;
 
     @include for-laptop {
       width: 300px;

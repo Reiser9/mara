@@ -6,7 +6,10 @@ const ConnectWalletBtn = ({ handleClick, text }) => (
     {text ? (
       <p className="connect-wallet__text connect-wallet__text-name">{text}</p>
     ) : (
-      <p className="connect-wallet__text">Connect Wallet</p>
+      <p className="connect-wallet__text">
+        <img className="connect-wallet--icon" src="./images/n.svg" alt="n" />
+        Connect Wallet
+      </p>
     )}
   </button>
 );

@@ -31,7 +31,7 @@ const GenerateBlock = () => {
   };
 
   const moreThenManyCount = app.tokensLeft >= app.manyCount;
-  const textForMessage = `Select 1 BIEZ`;
+  const textForMessage = `Select 1 Mara`;
 
   return (
     <div id="generate-block" className="generate-block">
