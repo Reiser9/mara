@@ -2,9 +2,12 @@
 import React, {useContext} from 'react';
 import CalendarBtn from './CalendarBtn';
 import { appStore } from '../../state/app';
+import GenerateSoldOut from '../Generate/GenerateSoldOut';
+import GenerateBlock from '../Generate/GenerateBlock';
 
 const Hero = () => {
   const { state } = useContext(appStore);
+  const { soldOut } = state.app;
   const token = state.app;
 
   return (
@@ -37,11 +40,8 @@ const Hero = () => {
             A collection of 1000 unique, randomly generated NFT’s sorted on the NEAR blockchain
           </p>
           <div className="hero__wrapper">
-            <CalendarBtn className="hero__calendar-btn" />
+            {soldOut ? <GenerateSoldOut /> : <GenerateBlock />}
           </div>
-          {/*<p className="hero__item--text">
-            Tokens left: {token.nftTotalSupply}/{token.tokensLeft}
-          </p>*/}
         </div>
 
         <picture className="hero__picture">
