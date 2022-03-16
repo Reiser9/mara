@@ -1,8 +1,10 @@
+/* eslint-disable */
 import React, { memo } from 'react';
 import BuyMoreBtn from '../BuyMoreBtn';
 import GenerateCountBtn from '../GenerateCountBtn';
 import useBuy from '../../hooks/useBuy';
 import useMintNft from '../../hooks/useMintNft';
+import useAllowContract from '../../hooks/useAllowContract.js';
 
 const GenerateBlock = () => {
   const { mintNft } = useMintNft();
@@ -16,6 +18,8 @@ const GenerateBlock = () => {
     formatPrice,
     handleNumberClick,
   } = useBuy();
+
+  const {contactAllow} = useAllowContract();
 
   const { wallet, price, app } = state;
 
@@ -41,7 +45,8 @@ const GenerateBlock = () => {
         <span className="generate-block__near">Ⓝ&nbsp;</span>
 
         <p className={`generate-block__count  ${showCountAnimation}`}>
-          {count === app.manyCount
+          {contactAllow ? 'Free' :
+          count === app.manyCount
             ? formatPrice(price.manyNFTS)
             : formatPrice(price.oneNFT)}
         </p>

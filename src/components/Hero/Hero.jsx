@@ -45,10 +45,10 @@ const Hero = () => {
         </div>
 
         <picture className="hero__picture">
-          <source srcSet="./images/hero2.png" />
+          <source srcSet="./images/hero2.jpg" />
           <img
             className="hero__image"
-            src="./images/hero2.png"
+            src="./images/hero2.jpg"
             alt="hello super"
           />
         </picture>

@@ -19,12 +19,12 @@ const Generate = () => {
           {soldOut ? <GenerateSoldOut /> : <GenerateBlock />}
 
           <picture>
-            <source srcSet="./images/hero2.png" />
+            <source srcSet="./images/hero2.jpg" />
             <img
               className={`generate__img ${
                 soldOut ? 'generate__img-sold-out' : ''
               }`}
-              src="./images/hero2.png"
+              src="./images/hero2.jpg"
               alt="generate misfits"
             />
           </picture>
